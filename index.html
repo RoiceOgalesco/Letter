@@ -20,10 +20,28 @@
             <div class="heart"></div>
         </div>
     </div>
+
+    <audio id="myAudio" controls autoplay>
+        <source src="../../Downloads/Letter/Taylor Swift - invisible string (Instrumental Version) Unofficial.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
+        const heart = document.querySelector('.heart');
+        const audio = document.getElementById('myAudio');
+
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
+        });
+
+        heart.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
         });
     </script>
 </body>
