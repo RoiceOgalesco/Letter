@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+.text h3{
+  font-size: 10px;
+}
 :root
 {
   --primary: #fff;
@@ -22,7 +26,7 @@ body
 }
 .container 
 {
-  height: 100vh;
+  height: 110vh;
   display: grid;
   place-items: center;
 }
